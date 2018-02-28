@@ -1300,15 +1300,15 @@ jQuery(document).ready(function($) {
 				self.setSnippet();
 				self.runQuery(self.input_query);
 			},
-			download: function(queryid, is_csv) {
-				var self = this;
-				var api = is_csv ? self.apis.csvdownload : self.apis.download;
-				var uri = self.domain + api.format({
-					datasource: self.datasource,
-					queryid: queryid
-				});
-				return uri;
-			},
+//			download: function(queryid, is_csv) {
+//				var self = this;
+//				var api = is_csv ? self.apis.csvdownload : self.apis.download;
+//				var uri = self.domain + api.format({
+//					datasource: self.datasource,
+//					queryid: queryid
+//				});
+//				return uri;
+//			},
 			killQuery: function(val) {
 				var self = this;
 				var api = self.is_presto ? self.apis.kill : self.apis.killHive;

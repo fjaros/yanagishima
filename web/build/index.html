@@ -330,11 +330,11 @@
 							<input type="checkbox" v-model="is_pretty" :disabled="response.result.error || !queryid || loading.result">
 							Pretty print
 						</label>
-						<div class="btn-group ml-2">
-							<a :href="download(queryid)" class="btn btn-sm btn-secondary" :class="{disabled: response.result.error || !queryid || loading.result}" data-toggle="tooltip" data-animation="false" title="Download TSV"><i class="fa fa-fw fa-download mr-1"></i>TSV</a>
-							<a :href="download(queryid, 'csv')" class="btn btn-sm btn-secondary" :class="{disabled: response.result.error || !queryid || loading.result}" data-toggle="tooltip" data-animation="false" title="Download CSV"><i class="fa fa-fw fa-download mr-1"></i>CSV</a>
-						<!-- /btn-group --></div>
-						<button class="btn btn-sm btn-secondary ml-2" :disabled="response.result.error || !queryid || loading.result" @click="publish(queryid)" data-toggle="tooltip" data-animation="false" title="Publish Readonly Result"><i class="fa fa-fw fa-globe mr-1"></i>Publish</button>
+						<!--<div class="btn-group ml-2">-->
+							<!--<a :href="download(queryid)" class="btn btn-sm btn-secondary" :class="{disabled: response.result.error || !queryid || loading.result}" data-toggle="tooltip" data-animation="false" title="Download TSV"><i class="fa fa-fw fa-download mr-1"></i>TSV</a>-->
+							<!--<a :href="download(queryid, 'csv')" class="btn btn-sm btn-secondary" :class="{disabled: response.result.error || !queryid || loading.result}" data-toggle="tooltip" data-animation="false" title="Download CSV"><i class="fa fa-fw fa-download mr-1"></i>CSV</a>-->
+						<!--&lt;!&ndash; /btn-group &ndash;&gt;</div>-->
+						<!--<button class="btn btn-sm btn-secondary ml-2" :disabled="response.result.error || !queryid || loading.result" @click="publish(queryid)" data-toggle="tooltip" data-animation="false" title="Publish Readonly Result"><i class="fa fa-fw fa-globe mr-1"></i>Publish</button>-->
 					<!-- /col --></div>
 				<!-- /row --></div>
 			<!-- /result --></template>
@@ -538,15 +538,15 @@
 							<td class="text-center">
 								<a href="#" class="btn btn-sm btn-secondary" @click.prevent="input_query = items[1], focus++"><i class="fa fa-fw fa-keyboard-o"></i></a>
 							</td>
-							<td class="text-right overflow-visible">
-								<div class="btn-group">
-									<a href="#" data-toggle="dropdown">{{items[3]}}<i class="fa fa-fw fa-download ml-1"></i></a>
-									<div class="dropdown-menu dropdown-menu-right">
-										<a :href="download(items[0])" class="dropdown-item">TSV <small>format</small></a>
-										<a :href="download(items[0], 'csv')" class="dropdown-item">CSV <small>format</small></a>
-									<!-- /dropdown-menu --></div>
-								<!-- /btn-group --></div>
-							</td>
+							<!--<td class="text-right overflow-visible">-->
+								<!--<div class="btn-group">-->
+									<!--<a href="#" data-toggle="dropdown">{{items[3]}}<i class="fa fa-fw fa-download ml-1"></i></a>-->
+									<!--<div class="dropdown-menu dropdown-menu-right">-->
+										<!--<a :href="download(items[0])" class="dropdown-item">TSV <small>format</small></a>-->
+										<!--<a :href="download(items[0], 'csv')" class="dropdown-item">CSV <small>format</small></a>-->
+									<!--&lt;!&ndash; /dropdown-menu &ndash;&gt;</div>-->
+								<!--&lt;!&ndash; /btn-group &ndash;&gt;</div>-->
+							<!--</td>-->
 						</tr>
 					</tbody>
 				</table>
